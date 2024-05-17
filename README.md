@@ -1,1 +1,2 @@
-##Pomodoro Timer!##
+# Pomodoro Timer!
+It's just pomodoro timer :)
