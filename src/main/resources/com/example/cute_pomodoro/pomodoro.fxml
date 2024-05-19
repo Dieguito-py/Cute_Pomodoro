@@ -7,18 +7,18 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cute_pomodoro.PomodoroControler">
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21">
    <children>
       <Label text="Focus Time (minutes):" />
       <TextField fx:id="focusTimeField" />
       <Label text="Break Time (minutes):" />
       <TextField fx:id="breakTimeField" />
-      <Button text="Start" fx:id="startButton" />
-      <Label fx:id="timerLabel" text="25:00" style="-fx-font-size: 24px;" />
+      <Button fx:id="startButton" text="Start" />
+      <Label fx:id="timerLabel" style="-fx-font-size: 24px;" text="25:00" />
       <ProgressBar fx:id="progressBar" prefWidth="200" />
-      <Button text="Pause" fx:id="pauseButton" />
+      <Button fx:id="pauseButton" text="Pause" />
    </children>
    <padding>
-      <Insets top="20" right="20" bottom="20" left="20" />
+      <Insets bottom="20" left="20" right="20" top="20" />
    </padding>
 </VBox>

@@ -37,8 +37,8 @@ public class PomodoroControler {
         focusTimeField.setText("25");
         breakTimeField.setText("5");
 
-        startButton.setOnAction(e -> handleStartButtonAction());
-        pauseButton.setOnAction(e -> handlePauseButtonAction());
+        startButton.setOnAction(_ -> handleStartButtonAction());
+        pauseButton.setOnAction(_ -> handlePauseButtonAction());
     }
 
     private void handleStartButtonAction() {

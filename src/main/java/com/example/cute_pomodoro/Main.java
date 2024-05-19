@@ -9,14 +9,15 @@ import javafx.stage.Stage;
 import java.util.Objects;
 
 public class Main extends Application {
-
     @Override
-    public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("pomodoro.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-//        stage.setTitle("Hello!");
-        stage.setScene(scene);
-        stage.show();
+    public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("cute_pomodor.fxml")));
+        int width = 750;
+        int height = 500;
+        Scene scene = new Scene(root, width, height);
+        primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
+        primaryStage.show();
     }
 
     public static void main(String[] args) {
