@@ -1,3 +1,19 @@
 .linear-grad-to-top{
     -fx-background-color: linear-gradient(to top, #FFAAE7, #FFF2FB);
+
+
+
+}
+.custom-text-field {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #007acc;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+    -fx-focus-color: #F0BFE4;
+    -fx-faint-focus-color: transparent;
 }
