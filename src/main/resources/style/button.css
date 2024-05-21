@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Boldins';
+    src: url('assets/fonts/Boldins.ttf') format('truetype');
+}
+
+.button {
+    -fx-background-color: #FF4672;
+    -fx-text-fill: white;
+    -fx-font-size: 30px;
+    -fx-font-family: 'Boldins';
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 55px;
+    /*-fx-border-radius: 30px;*/
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0, 0, 5);
+}
+
+.button:hover {
+    -fx-background-color: #e54169;
+}
+
+.button:pressed {
+    -fx-background-color: #FF4672;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 1);
+    -fx-padding: 11px 21px 9px 19px;
+}

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Boldins';
+    src: url('assets/fonts/Boldins.ttf');
+}
+
+.label {
+    -fx-font-family: 'Boldins';
+    -fx-font-size: 36;
+}
+
+.button .text {
+    -fx-font-family: 'Boldins';
+}
