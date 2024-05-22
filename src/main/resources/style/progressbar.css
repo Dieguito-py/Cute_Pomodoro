@@ -1,0 +1,16 @@
+.custom-progress-bar {
+    -fx-accent: #FF3566; /* Cor da barra de progresso */
+    -fx-background-color: Transparent; /* Fundo transparente */
+    /*-fx-background-insets: 0;*/
+    /*-fx-padding: 1px; !* Padding ao redor da barra *!*/
+}
+
+.custom-progress-bar .track {
+    -fx-background-color: #FF8CA8; /* Cor da trilha */
+    -fx-background-radius: 10px;
+    /*-fx-padding: 2px;*/
+}
+
+.custom-progress-bar .bar {
+    -fx-background-radius: 8px; /* Bordas arredondadas na barra */
+}

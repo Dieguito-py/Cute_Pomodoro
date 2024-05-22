@@ -1,13 +1,28 @@
 @font-face {
     font-family: 'Boldins';
-    src: url('assets/fonts/Boldins.ttf');
+    src: url('fonts/Boldins.ttf');
 }
 
-.label {
+@font-face {
+    font-family: 'CherryBomb';
+    src: url('fonts/CherryBomb.ttf');
+}
+
+.labelBoldins {
     -fx-font-family: 'Boldins';
     -fx-font-size: 36;
 }
 
-.button .text {
+.labelTimer {
     -fx-font-family: 'Boldins';
+    -fx-font-size: 64;
+}
+
+.labelCherry {
+    -fx-font-family: 'CherryBomb';
+    -fx-font-size: 36;
+}
+
+.button .text {
+    -fx-font-family: 'CherryBomb';
 }
