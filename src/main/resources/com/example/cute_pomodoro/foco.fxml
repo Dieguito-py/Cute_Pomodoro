@@ -8,28 +8,37 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" styleClass="linear-grad-to-top" stylesheets="@../../../style/scene1.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cute_pomodoro.Foco">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" styleClass="linear-grad-to-top" stylesheets="@../../../style/scene1.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cute_pomodoro.FocusController">
    <children>
       <ImageView fitHeight="332.0" fitWidth="449.0" layoutX="-58.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../assets/images/cinnamoroll.gif" />
          </image>
       </ImageView>
-      <Button fx:id="myButton" layoutX="490.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="58.0" prefWidth="61.0" stylesheets="@../../../style/playpause.css">
+      <Label layoutX="378.0" layoutY="67.0" stylesheets="@../../../style/cherryFont.css" text="Modo Foco" textFill="#ff4672" />
+      <ProgressBar fx:id="progressBar" layoutX="381.0" layoutY="280.0" prefHeight="18.0" prefWidth="317.0" progress="0.96" styleClass="custom-progress-bar" stylesheets="@../../../style/progressbar.css" />
+      <Label fx:id="timerLabel" layoutX="472.0" layoutY="180.0" prefHeight="86.0" prefWidth="135.0" styleClass="labelTimer" stylesheets="@../../../style/fonts.css" text="23:00" textFill="#319cff">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <Button layoutX="562.0" layoutY="333.0" mnemonicParsing="false" onAction="#pauseTimer" prefHeight="58.0" prefWidth="61.0" stylesheets="@../../../style/playpause.css">
          <graphic>
-            <ImageView fx:id="myImageView" fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../assets/icons/pause.png" />
                </image>
             </ImageView>
          </graphic>
       </Button>
-      <Label layoutX="378.0" layoutY="67.0" stylesheets="@../../../style/cherryFont.css" text="Modo Foco" textFill="#ff4672" />
-      <ProgressBar layoutX="369.0" layoutY="285.0" prefHeight="18.0" prefWidth="317.0" progress="0.52" styleClass="custom-progress-bar" stylesheets="@../../../style/progressbar.css" />
-      <Label layoutX="461.0" layoutY="183.0" prefHeight="86.0" prefWidth="135.0" styleClass="labelTimer" stylesheets="@../../../style/fonts.css" text="23:00" textFill="#319cff">
-         <font>
-            <Font size="64.0" />
-         </font>
-      </Label>
+      <Button layoutX="481.0" layoutY="333.0" mnemonicParsing="false" onAction="#continueTimer" prefHeight="58.0" prefWidth="61.0" stylesheets="@../../../style/playpause.css">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/icons/play.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>
