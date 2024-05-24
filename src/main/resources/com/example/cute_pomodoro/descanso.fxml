@@ -33,11 +33,14 @@
             </ImageView>
          </graphic>
       </Button>
-      <Label layoutX="416.0" layoutY="64.0" stylesheets="@../../../style/cherryFont.css" text="Descanso" textFill="#ff4672" />
-      <ProgressBar fx:id="progressBar" layoutX="393.0" layoutY="283.0" prefHeight="18.0" prefWidth="317.0" progress="0.52" styleClass="custom-progress-bar" stylesheets="@../../../style/progressbar.css" />
-      <Label fx:id="timerLabel" layoutX="484.0" layoutY="178.0" prefHeight="86.0" prefWidth="135.0" styleClass="labelTimer" stylesheets="@../../../style/fonts.css" text="23:00" textFill="#319cff">
+      <Label layoutX="407.0" layoutY="62.0" stylesheets="@../../../style/cherryFont.css" text="Descanso" textFill="#ff4672">
          <font>
-            <Font size="64.0" />
+            <Font name="Cherry Bomb One Regular" size="12.0" />
+         </font></Label>
+      <ProgressBar fx:id="progressBar" layoutX="393.0" layoutY="283.0" prefHeight="18.0" prefWidth="317.0" progress="0.52" styleClass="custom-progress-bar" stylesheets="@../../../style/progressbar.css" />
+      <Label fx:id="timerLabel" layoutX="455.0" layoutY="155.0" prefHeight="119.0" prefWidth="193.0" styleClass="labelTimer" stylesheets="@../../../style/fonts.css" textFill="#319cff">
+         <font>
+            <Font name="Boldins" size="64.0" />
          </font>
       </Label>
    </children>

@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.media.AudioClip;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -21,10 +22,12 @@ public class FocusController {
     private int focusTime;
     private int breakTime;
     private int timeRemaining;
+    private AudioClip alarmSound;
 
     public void initTimes(int focusTime, int breakTime) {
         this.focusTime = focusTime;
         this.breakTime = breakTime;
+        this.alarmSound = new AudioClip(getClass().getResource("/sound.wav").toString());
         startFocus();
     }
 
@@ -44,6 +47,7 @@ public class FocusController {
             updateUI();
             if (timeRemaining <= 0) {
                 timeline.stop();
+                alarmSound.play();
                 if (focusTime > 0) {
                     goToBreak();
                 } else {

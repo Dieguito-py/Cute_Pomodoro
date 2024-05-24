@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.media.AudioClip;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -20,9 +21,11 @@ public class BreakController {
     private Timeline timeline;
     private int breakTime;
     private int timeRemaining;
+    private AudioClip alarmSound;
 
     public void initBreak(int breakTime) {
         this.breakTime = breakTime;
+        this.alarmSound = new AudioClip(getClass().getResource("/sound.wav").toString());
         startBreak();
     }
 
@@ -37,6 +40,7 @@ public class BreakController {
             updateUI();
             if (timeRemaining <= 0) {
                 timeline.stop();
+                alarmSound.play();
                 goToFocus();
             }
         }));

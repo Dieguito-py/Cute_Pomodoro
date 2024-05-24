@@ -14,11 +14,6 @@
         <junit.version>5.10.0</junit.version>
     </properties>
 
-    <dependency>
-        <groupId>de.jensd</groupId>
-        <artifactId>fontawesomefx</artifactId>
-        <version>8.9</version>
-    </dependency>
     <dependencies>
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -29,6 +24,11 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>22-ea+11</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-media</artifactId>
+            <version>17.0.2</version>
         </dependency>
 
         <dependency>
@@ -65,7 +65,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.cute_pomodoro/com.example.cute_pomodoro.HelloApplication</mainClass>
+                            <mainClass>com.example.cute_pomodoro/com.example.cute_pomodoro.Main</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
