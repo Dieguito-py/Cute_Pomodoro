@@ -1,11 +1,10 @@
 package com.example.cute_pomodoro;
 
-import com.example.cute_pomodoro.FocusController;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import javafx.scene.Scene;
-import javafx.fxml.FXMLLoader;
 
 public class CutePomodor {
     @FXML
@@ -17,7 +16,7 @@ public class CutePomodor {
     @FXML
     private void startPomodoro() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("foco.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/foco.fxml"));
             Scene scene = new Scene(loader.load());
 
             FocusController controller = loader.getController();

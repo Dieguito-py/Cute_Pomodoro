@@ -57,7 +57,7 @@ public class BreakController {
 
     private void goToFocus() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("foco.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/foco.fxml"));
             Scene scene = new Scene(loader.load());
 
             FocusController controller = loader.getController();

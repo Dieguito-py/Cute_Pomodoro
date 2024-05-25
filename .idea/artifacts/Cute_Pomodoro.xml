@@ -1,0 +1,35 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Cute_Pomodoro">
+    <output-path>$PROJECT_DIR$/out/artifacts/Cute_Pomodoro</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="com.example.cute_pomodoro.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="icons">
+          <JavaFxApplicationIcons>
+            <option name="windowsIcon" value="$PROJECT_DIR$/src/main/resources/assets/icons/favicon.ico" />
+          </JavaFxApplicationIcons>
+        </option>
+        <option name="title" value="Cinnamoroll Pomodoro" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Cute_Pomodoro.jar">
+        <element id="module-output" name="Cute_Pomodoro" />
+      </element>
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-media:17.0.2" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-media:win:17.0.2" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:win:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:win:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:win:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:22-ea+11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:win:22-ea+11" />
+    </root>
+  </artifact>
+</component>
